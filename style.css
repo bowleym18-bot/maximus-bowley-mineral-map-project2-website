@@ -1,0 +1,21 @@
+body {
+background-color:rgb(94, 89, 79);
+color:azure
+margin 20px;
+}
+
+nav-list {
+display: flex;
+list-style: none;
+margin: 0; 
+padding: 0;
+gap: 24px;
+}
+
+img {
+     width: 320px;
+     border: 10px rgba(207, 205, 205, 0.843);
+     border-radius: 10px;
+     filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
+     margin: 20px;
+}
