@@ -1,5 +1,5 @@
 body {
-background-color:rgb(94, 89, 79);
+background-color:rgb(149, 142, 127);
 color:azure
 margin 20px;
 }
@@ -13,7 +13,7 @@ gap: 24px;
 }
 
 img {
-     width: 320px;
+     width: 420px;
      border: 10px rgba(207, 205, 205, 0.843);
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
