@@ -12,10 +12,27 @@ padding: 0;
 gap: 24px;
 }
 
+a {
+     color:  hsl(128, 100%, 55%) ;
+     font-size: 15px;
+     margin: 25px;
+}
+
 img {
-     width: 50px;
+     width: 440px;
      border: 10px rgba(207, 205, 205, 0.843);
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
      margin: 20px;
+}
+
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
 }
