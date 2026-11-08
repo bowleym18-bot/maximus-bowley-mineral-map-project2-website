@@ -57,3 +57,21 @@ h4 {
      color: rgb(219, 226, 255);
      font-size: 15px;
 }
+
+#listM {
+     color: 'black';
+     background-color: rgb(148, 72, 72);
+     padding: 18px;
+     border-radius: 20px;
+     width: 230px;
+     height: 150px;
+}
+
+#listG {
+     color: 'black';
+     background-color: rgb(78, 88, 132);
+     padding: 18px;
+     border-radius: 20px;
+     width: 270px;
+     height: 150px;
+}
