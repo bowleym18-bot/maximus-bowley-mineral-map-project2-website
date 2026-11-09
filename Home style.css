@@ -9,7 +9,9 @@ display: flex;
 list-style: none;
 margin: 0; 
 padding: 0;
-gap: 24px;
+gap: 30px;
+align-items: center;
+background-color: antiquewhite;
 }
 
 a {
@@ -30,7 +32,7 @@ div.scroll-container img {
 }
 
 img {
-     width: 340px;
+     width: 440px;
      border: 10px rgba(207, 205, 205, 0.843);
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
@@ -39,23 +41,28 @@ img {
 
 h1 {
      color: rgb(219, 226, 255);
-     font-size: 25px;
+     font-size: 35px;
      
 }
 
 h2 {
      color: rgb(219, 226, 255);
-     font-size: 20px;
+     font-size: 30px;
 }
 
 h3 {
      color: rgb(219, 226, 255);
-     font-size: 18px;
+     font-size: 28px;
 }
 
 h4 {
      color: rgb(219, 226, 255);
-     font-size: 15px;
+     font-size: 25px;
+}
+
+p{
+     color: black;
+     font-size: 20px;
 }
 
 #listM {
@@ -64,7 +71,9 @@ h4 {
      padding: 18px;
      border-radius: 20px;
      width: 230px;
-     height: 150px;
+     height: 250px;
+     align-content: center;
+     text-box: 20px;
 }
 
 #listG {
@@ -73,5 +82,13 @@ h4 {
      padding: 18px;
      border-radius: 20px;
      width: 270px;
-     height: 150px;
+     height: 250px;
+     align-content: center;
+      text-box: 20px;
+}
+
+.flex-container {
+     display: flex;      
+     gap: 20px; 
+     align-items: center;
 }

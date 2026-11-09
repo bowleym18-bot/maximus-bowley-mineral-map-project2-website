@@ -36,3 +36,79 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+
+h1 {
+     color: rgb(246, 255, 219);
+     font-size: 35px;
+     
+}
+
+h2 {
+     color: rgb(246, 255, 219);
+     font-size: 30px;
+}
+
+h3 {
+     color: rgb(246, 255, 219);
+     font-size: 28px;
+}
+
+h4 {
+     color: rgb(246, 255, 219);
+     font-size: 25px;
+}
+
+p{
+     color: black;
+     font-size: 20px;
+}
+
+#listbismuth {
+     color: 'black';
+     background-color: rgb(188, 223, 234);
+     padding: 18px;
+     border-radius: 20px;
+     width: 230px;
+     height: 520px;
+     align-content: center;
+     text-box: 20px;
+}
+
+#listjade {
+     color: 'black';
+     background-color: rgb(56, 176, 80);
+     padding: 18px;
+     border-radius: 20px;
+     width: 270px;
+     height: 500px;
+     align-content: center;
+      text-box: 20px;
+}
+
+#listbenitoite {
+     color: 'black';
+     background-color: rgb(88, 114, 230);
+     padding: 18px;
+     border-radius: 20px;
+     width: 270px;
+     height: 500px;
+     align-content: center;
+      text-box: 20px;
+}
+
+#listkunzite {
+     color: 'black';
+     background-color: rgb(255, 154, 233);
+     padding: 18px;
+     border-radius: 20px;
+     width: 270px;
+     height: 500px;
+     align-content: center;
+      text-box: 20px;
+}
+
+.flex-container {
+     display: flex;      
+     gap: 35px; 
+     align-items: center;
+}
