@@ -14,9 +14,7 @@ list-style: none;
 margin: 0; 
 padding: 0;
 gap: 30px;
-align-items: center;
-text-align: center;
-background-color: antiquewhite;
+align-content: center;
 }
 
 a {
@@ -98,6 +96,10 @@ p{
      align-items: center;
 }
 
+.middle-page-container {
+     display: flex;
+     align-items: center;
+}
 footer {
      align-items: center;
 }
