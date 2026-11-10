@@ -4,6 +4,10 @@ color:rgb(219, 226, 255)
 margin 20px;
 }
 
+header {
+     align-items: center;
+}
+
 nav {
 display: flex;
 list-style: none;
@@ -91,5 +95,9 @@ p{
 .flex-container {
      display: flex;      
      gap: 20px; 
+     align-items: center;
+}
+
+footer {
      align-items: center;
 }
