@@ -14,8 +14,20 @@ gap: 24px;
 
 a {
      color:  hsl(128, 100%, 55%) ;
-     font-size: 15px;
+     font-size: 25px;
      margin: 25px;
+}
+
+a:visited {
+     color:  hsl(198, 100%, 62%) ;
+}
+
+a:hover {
+     color:  hsl(27, 100%, 55%) ;
+}
+
+a:active {
+      color:  hsl(0, 99%, 53%) ;
 }
 
 img {
@@ -24,4 +36,21 @@ img {
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
      margin: 20px;
+}
+
+.info-box {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.info-box.active {
+  display: block; 
+}
+
+.clickable-img {
+  width: 150px;
+  cursor: pointer;
+  margin-right: 10px;
 }

@@ -10,15 +10,24 @@ list-style: none;
 margin: 0; 
 padding: 0;
 gap: 30px;
-align-items: center;
-text-align: center;
-background-color: antiquewhite;
 }
 
 a {
      color:  hsl(128, 100%, 55%) ;
-     font-size: 35px;
+     font-size: 25px;
      margin: 25px;
+}
+
+a:visited {
+     color:  hsl(198, 100%, 62%) ;
+}
+
+a:hover {
+     color:  hsl(27, 100%, 55%) ;
+}
+
+a:active {
+      color:  hsl(0, 99%, 53%) ;
 }
 
 div.scroll-container {
