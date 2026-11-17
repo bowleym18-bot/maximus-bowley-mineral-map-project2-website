@@ -12,10 +12,40 @@ padding: 0;
 gap: 24px;
 }
 
+h1 {
+     color: rgb(213, 251, 255);
+     font-size: 35px;
+     
+}
+
+h2 {
+     color: rgb(213, 251, 255);
+     font-size: 35px;
+     
+}
+
+h3 {
+     color: rgb(213, 251, 255);
+     font-size: 35px;
+     
+}
+
 a {
      color:  hsl(128, 100%, 55%) ;
      font-size: 25px;
      margin: 25px;
+}
+.top-nav {
+  background-color: #201643;
+  padding: 0 2rem;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
 }
 
 a:visited {
@@ -27,7 +57,46 @@ a:hover {
 }
 
 a:active {
-      color:  hsl(0, 99%, 53%) ;
+     color:  hsl(0, 99%, 53%) ;
+}
+
+.matching-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-box, .image-box {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.info-box.selected, .image-box.selected {
+  border-color: #007bff;
+  background-color: #e7f1ff;
+}
+
+.info-box.matched, .image-box.matched {
+  border-color: #28a745;
+  background-color: #d4edda;
+  pointer-events: none;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 img {
@@ -43,7 +112,7 @@ footer {
      font-size: 20;
 }
 
-.info-box {
+/*.info-box {
   display: none;
   border: 1px solid #ccc;
   padding: 15px;
@@ -59,3 +128,30 @@ footer {
   cursor: pointer;
   margin-right: 10px;
 }
+
+#gallery {
+     width: 820px;
+     border: 10px rgba(207, 205, 205, 0.843);
+     border-radius: 10px;
+     filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
+     margin: 20px;
+}
+
+  <img src="Gemstone Image 1.jpg" alt="This is a photo of a piece of Bismuth." class="clickable-img" data-info="bismuth info-box" class="gallery image">
+  <img src="Gemstone Image 3.jpg" alt="This is an image of benitoite that can be found in California." class="clickable-img" data-info="benitoite info-box" class="gallery image">
+  <img src="Metal Image 1.jpg" alt="This is an image of raw gold melted and shaped." class="clickable-img" data-info="gold info-box" class="gallery image">
+  <img src="Metal Image 4.jpg" alt="This is an image of processed titanium." class="clickable-img" data-info="titanium info-box" class="gallery image">
+
+<h2> Here are the info </h2>
+
+    <h3>Bismuth</h3>
+    <p>More of a metal than a crystal since it's a brittle, crystalline, white metal with a slight pink tinge.</p>
+    
+    <h3>Benitoite</h3>
+    <p>Can be mistaken for sapphire, but it is more valuable.</p>
+    
+    <h3>Gold</h3>
+    <p>There is an average of 0.2 milligrams in the human body.</p>
+    
+    <h3>Titanium</h3>
+    <p>Is the go-to metal for artificial hip joints, dental implants, and bone pins.</p>

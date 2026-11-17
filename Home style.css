@@ -23,14 +23,6 @@ a {
      margin: 25px;
 }
 
-a:visited {
-     color:  hsl(198, 100%, 62%) ;
-}
-
-a:active {
-      color:  hsl(0, 99%, 53%) ;
-}
-
 .top-nav {
   background-color: #287339;
   padding: 0 2rem;
@@ -44,52 +36,16 @@ a:active {
   gap: 2rem;
 }
 
-.top-nav a {
-  position: relative;
-  display: inline-block;
-  padding: 1.25rem 0;
-  color:  hsl(128, 100%, 55%) ;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: 500;
+a:visited {
+     color:  hsl(198, 100%, 62%) ;
 }
 
-.top-nav a::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background-color:  hsl(198, 100%, 62%) ;
-  transform: scaleX(0);
-  transform-origin: center;
+a:hover {
+     color:  hsl(27, 100%, 55%) ;
 }
 
-.top-nav a::active {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background-color:   hsl(0, 99%, 53%) ;
-  transform: scaleX(0);
-  transform-origin: center;
-}
-
-.top-nav a:hover,
-.top-nav a:focus-visible,
-.top-nav a[aria-current="page"] {
-  color: hsl(27, 100%, 55%) ;
-}
-
-.top-nav a:hover::after,
-.top-nav a:focus-visible::after,
-.top-nav a[aria-current="page"]::after {
-  transform: scaleX(1);
-}
-
-.top-nav a:active::after {
-  background-color: rgb(117, 173, 130);
+a:active {
+     color:  hsl(0, 99%, 53%) ;
 }
 
 div.scroll-container {
@@ -142,6 +98,16 @@ p{
      font-size: 20px;
 }
 
+#Paragraph {
+     background-color: rgb(109, 181, 128);
+     border-radius: 10px;
+     margin: 40px;
+     font-size-adjust: 20px;
+     border: 5px solid black;
+     align-items: center;
+     text-align: center;
+}
+
 #listM {
      color: 'black';
      background-color: rgb(148, 72, 72);
@@ -151,6 +117,8 @@ p{
      height: 250px;
      align-content: center;
      text-box: 20px;
+     font-size: 18.5px;
+     border: 10px solid black;
 }
 
 #listG {
@@ -162,6 +130,8 @@ p{
      height: 250px;
      align-content: center;
      text-box: 20px;
+     font-size: 18.5px;
+     border: 10px solid black;
 }
 
 .flex-container {
@@ -177,4 +147,36 @@ p{
 footer {
      align-items: center;
      font-size: 20;
+}
+
+/*.top-nav a {
+  position: relative;
+  display: inline-block;
+  padding: 1.25rem 0;
+  color:  hsl(128, 100%, 55%) ;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.top-nav a:visited {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color:  hsl(198, 100%, 62%) ;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.top-nav a::active {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color:   hsl(0, 99%, 53%) ;
+  transform: scaleX(0);
+  transform-origin: center;
 }

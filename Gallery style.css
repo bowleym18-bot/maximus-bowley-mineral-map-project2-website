@@ -1,0 +1,67 @@
+body {
+background-color:rgb(51, 51, 105);
+color:rgb(253, 204, 217)
+margin 20px;
+}
+
+nav-list {
+display: flex;
+list-style: none;
+margin: 0; 
+padding: 0;
+gap: 24px;
+}
+
+a {
+     color:  hsl(128, 100%, 55%) ;
+     font-size: 25px;
+     margin: 25px;
+}
+.top-nav {
+  background-color: #287339;
+  padding: 0 2rem;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+a:visited {
+     color:  hsl(198, 100%, 62%) ;
+}
+
+a:hover {
+     color:  hsl(27, 100%, 55%) ;
+}
+
+a:active {
+     color:  hsl(0, 99%, 53%) ;
+}
+
+img {
+     width: 420px;
+     border: 10px rgba(207, 205, 205, 0.843);
+     border-radius: 10px;
+     filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
+     margin: 20px;
+}
+
+h1 {
+     color: rgb(219, 226, 255);
+     font-size: 35px;
+     
+}
+
+h2 {
+     color: rgb(219, 226, 255);
+     font-size: 30px;
+}
+
+h3 {
+     color: rgb(219, 226, 255);
+     font-size: 28px;
+}

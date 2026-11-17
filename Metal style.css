@@ -18,6 +18,19 @@ a {
      margin: 25px;
 }
 
+.top-nav {
+  background-color: #454745;
+  padding: 0 2rem;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
 a:visited {
      color:  hsl(198, 100%, 62%) ;
 }
@@ -27,7 +40,7 @@ a:hover {
 }
 
 a:active {
-      color:  hsl(0, 99%, 53%) ;
+     color:  hsl(0, 99%, 53%) ;
 }
 
 img {
@@ -84,6 +97,7 @@ p{
      height: 500px;
      align-content: center;
      text-box: 20px;
+     border: 5px solid black;
 }
 
 #listsilver {
@@ -95,6 +109,7 @@ p{
      height: 500px;
      align-content: center;
      text-box: 20px;
+     border: 5px solid black;
 }
 
 #listlead {
@@ -106,6 +121,7 @@ p{
      height: 610px;
      align-content: center;
      text-box: 20px;
+     border: 5px solid black;
 }
 
 #listtitanium {
@@ -117,6 +133,7 @@ p{
      height: 500px;
      align-content: center;
      text-box: 20px;
+     border: 5px solid black;
 }
 
 footer {
