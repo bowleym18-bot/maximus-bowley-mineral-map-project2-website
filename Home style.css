@@ -1,7 +1,7 @@
 body {
 background-color:rgb(93, 122, 100);
-color:rgb(219, 226, 255)
-margin 20px;
+color:black;
+margin: 40px;
 }
 
 header {
@@ -25,15 +25,23 @@ a {
 
 .top-nav {
   background-color: #287339;
-  padding: 0 2rem;
+  padding: 10px;
+  justify-content: center;
 }
 
 .top-nav ul {
   list-style: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   display: flex;
-  gap: 2rem;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.logo img {
+     height: 100px;
+     width: 200px;
 }
 
 a:visited {
@@ -49,14 +57,14 @@ a:active {
 }
 
 div.scroll-container {
-  background-color: #333;
+  background-color: #284527;
   overflow: auto;
   white-space: nowrap;
   padding: 10px;
 }
 
 div.scroll-container img {
-  padding: 10px;
+  padding: 20px;
 }
 
 img {
@@ -67,25 +75,38 @@ img {
      margin: 20px;
 }
 
+.middle-page-container {
+     display: flex;
+     align-items: center;
+     row-gap: 60px;
+     order: 10px rgba(207, 205, 205, 0.843);
+     border: 5px solid black;
+     align-items: center;
+     text-align: center;
+}
+
 video {
      row-gap: 60px;
      border: 10px rgba(207, 205, 205, 0.843);
+     margin: center;
 }
 
 h1 {
      color: rgb(219, 226, 255);
      font-size: 35px;
-     
+     text-align: center;
 }
 
 h2 {
      color: rgb(219, 226, 255);
      font-size: 30px;
+     text-align: center;
 }
 
 h3 {
      color: rgb(219, 226, 255);
      font-size: 28px;
+     text-align: center;
 }
 
 h4 {
@@ -134,19 +155,29 @@ p{
      border: 10px solid black;
 }
 
+#map {
+     width: 600px;
+     height: 450px;
+}
+
+.inframe {
+     width: 50%;
+     height: 400px;
+}
+
 .flex-container {
      display: flex;      
      gap: 20px; 
      align-items: center;
 }
 
-.middle-page-container {
-     display: flex;
-     align-items: center;
-}
 footer {
-     align-items: center;
      font-size: 20;
+     background-color: #01380e;
+     width: 800px;
+     height: 80px;
+     text-align: center;
+     margin-left: 20%;
 }
 
 /*.top-nav a {

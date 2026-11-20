@@ -1,15 +1,40 @@
 body {
 background-color:rgb(51, 51, 105);
-color:rgb(253, 204, 217)
-margin 20px;
+color:black;
+margin: 40px;
 }
 
-nav-list {
+header {
+     align-items: center;
+}
+
+nav {
 display: flex;
 list-style: none;
 margin: 0; 
 padding: 0;
-gap: 24px;
+gap: 30px;
+align-content: center;
+}
+
+.top-nav {
+  background-color: #287339;
+  padding: 10px;
+  justify-content: center;
+}
+
+.top-nav ul {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.logo img {
+     height: 100px;
+     width: 200px;
 }
 
 a {
@@ -24,10 +49,12 @@ a {
 
 .top-nav ul {
   list-style: none;
-  margin: 0;
+  margin: 20px;
   padding: 0;
   display: flex;
-  gap: 2rem;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
 }
 
 a:visited {
@@ -64,4 +91,13 @@ h2 {
 h3 {
      color: rgb(219, 226, 255);
      font-size: 28px;
+}
+
+/*
+nav-list {
+display: flex;
+list-style: none;
+margin: 0; 
+padding: 0;
+gap: 24px;
 }
