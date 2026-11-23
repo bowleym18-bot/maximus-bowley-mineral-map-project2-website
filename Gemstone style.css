@@ -55,20 +55,9 @@ a:active {
      color:  hsl(0, 99%, 53%) ;
 }
 
-div.scroll-container {
-  background-color: #442147;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 10px;
-}
-
-div.scroll-container img {
-  padding: 10px;
-}
-
 img {
      width: 440px;
-     border: 10px rgba(207, 205, 205, 0.843);
+     border: 5px rgba(155, 140, 158, 0.843);
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
      margin: 20px;
@@ -83,7 +72,6 @@ h1 {
 h2 {
      color: rgb(246, 255, 219);
      font-size: 30px;
-     text-align: center;
 }
 
 p{
@@ -92,6 +80,25 @@ p{
      text-align: center;
 }
 
+.heading-row {
+     display: flex;
+     gap: 400px;
+     justify-content: center;
+     margin-right: 300px
+}
+
+.Info-title {
+     display: flex;
+}
+
+.Info-image {
+     display: flex;
+     align-self: center;
+}
+
+.main-container{
+     align-self: center;
+}
 .container-1 img {
      height: 400px;
 }
@@ -104,15 +111,14 @@ p{
 #listbismuth {
      color: 'black';
      background-color: rgb(188, 223, 234);
-     padding: 18px;
+     padding: 12px;
      border-radius: 20px;
-     width: 600px;
-     height: 400px;
-     align-content: center;
+     width: 800px;
+     height: 210px;
+     align-content: left;
      text-box: 20px;
      border: 5px solid black;
 }
-
 
 .container-2 img {
      height: 400px;
@@ -126,10 +132,10 @@ p{
 #listjade {
      color: 'black';
      background-color: rgb(56, 176, 80);
-     padding: 18px;
+     padding: 12px;
      border-radius: 20px;
-     width: 600px;
-     height: 400px;
+     width: 800px;
+     height: 220px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
@@ -147,10 +153,10 @@ p{
 #listbenitoite {
      color: 'black';
      background-color: rgb(88, 114, 230);
-     padding: 18px;
+     padding: 12px;
      border-radius: 20px;
-     width: 600px;
-     height: 400px;
+     width: 800px;
+     height: 220px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
@@ -158,6 +164,7 @@ p{
 
 .container-4 img {
      height: 400px;
+     align-items: left;
 }
 
 .container-4 {
@@ -168,10 +175,10 @@ p{
 #listkunzite {
      color: 'black';
      background-color: rgb(255, 154, 233);
-     padding: 18px;
+     padding: 12px;
      border-radius: 20px;
-     width: 600px;
-     height: 400px;
+     width: 800px;
+     height: 280px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
@@ -183,13 +190,15 @@ p{
      align-items: center;
 }
 
+.low-bar {
+  justify-content: center;
+}
+
 footer {
      font-size: 20;
      background-color: #380130;
-     width: 800px;
-     height: 80px;
      text-align: center;
-     margin-left: 20%;
+     justify-content: center;
 }
 
 /*

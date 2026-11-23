@@ -119,6 +119,19 @@ img {
      margin: 20px;
 }
 
+.low-bar {
+  justify-content: center;
+}
+
+footer {
+     font-size: 20;
+     background-color: #170138;
+     text-align: center;
+     justify-content: center;
+}
+
+/*
+
 footer {
      font-size: 20;
      background-color: #170138;
@@ -127,8 +140,6 @@ footer {
      text-align: center;
      margin-left: 20%;
 }
-
-/*
 
 .matching-container {
   display: grid;

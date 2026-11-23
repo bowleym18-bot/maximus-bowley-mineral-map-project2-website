@@ -87,10 +87,39 @@ h2 {
      text-align: center;
 }
 
+.heading-row {
+     display: flex;
+     gap: 400px;
+     justify-content: center;
+     margin-right: 200px
+}
+
+.Info-title {
+     display: flex;
+}
+
+.Info-image {
+     display: flex;
+     align-self: center;
+}
+
 p{
      color: black;
      font-size: 20px;
      text-align: center;
+}
+
+.main-container{
+     align-self: center;
+}
+
+.container-1 img {
+     width: 440px;
+}
+
+.container-1 {
+     display: flex;
+     align-items: center;
 }
 
 #listgold {
@@ -98,11 +127,20 @@ p{
      background-color: rgb(251, 231, 172);
      padding: 18px;
      border-radius: 20px;
-     width: 230px;
-     height: 500px;
+     width: 800px;
+     height: 210px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
+}
+
+.container-2 img {
+     width: 440px;
+}
+
+.container-2 {
+     display: flex;
+     align-items: center;
 }
 
 #listsilver {
@@ -110,11 +148,20 @@ p{
      background-color: rgb(218, 218, 218);
      padding: 18px;
      border-radius: 20px;
-     width: 230px;
-     height: 500px;
+     width: 800px;
+     height: 210px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
+}
+
+.container-3 img {
+     width: 440px;
+}
+
+.container-3 {
+     display: flex;
+     align-items: center;
 }
 
 #listlead {
@@ -122,11 +169,20 @@ p{
      background-color: rgb(140, 140, 140);
      padding: 18px;
      border-radius: 20px;
-     width: 230px;
-     height: 610px;
+     width: 800px;
+     height: 210px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
+}
+
+.container-4 img {
+     width: 440px;
+}
+
+.container-4 {
+     display: flex;
+     align-items: center;
 }
 
 #listtitanium {
@@ -134,8 +190,8 @@ p{
      background-color: rgb(138, 175, 186);
      padding: 18px;
      border-radius: 20px;
-     width: 230px;
-     height: 500px;
+     width: 800px;
+     height: 210px;
      align-content: center;
      text-box: 20px;
      border: 5px solid black;
@@ -147,6 +203,18 @@ p{
      align-items: center;
 }
 
+.low-bar {
+  justify-content: center;
+}
+
+footer {
+     font-size: 20;
+     background-color: #38403a;
+     text-align: center;
+     justify-content: center;
+}
+
+/*
 footer {
      font-size: 20;
      background-color: #38403a;
