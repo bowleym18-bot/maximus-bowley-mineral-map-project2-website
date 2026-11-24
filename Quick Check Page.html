@@ -32,29 +32,37 @@
 
 <h1> Which one matches with which? </h1>
 
-<div id="feedback">Select a paragraph and an image to match!</div>
-
 <div class="matching-container">
 
-  <div class="Info">
-  <h2> Here are the info </h2>
-  <div class="left-column">
-    <div class="info-box" data-match="1"> <p>More of a metal than a crystal since it's a brittle, crystalline, white metal with a slight pink tinge.</p> </div>
-    <div class="info-box" data-match="2"> <p>Can be mistaken for sapphire, but it is more valuable.</p> </div>
-    <div class="info-box" data-match="3"> <p>There is an average of 0.2 milligrams in the human body.</p> </div>
-    <div class="info-box" data-match="4"> <p>Is the go-to metal for artificial hip joints, dental implants, and bone pins.</p> </div>
-  </div>
-
+  <div class="images" id="images">
   <div class="Image">
-  <h2> Here are the images </h2>
-  <div class="right-column">
+  <div class="right-column"> <h2> Here are the images </h2>
     <div class="image-box" data-match="1"><img src="Gemstone Image 1.jpg" alt="This is a photo of a piece of Bismuth."> </div>
     <div class="image-box" data-match="2"><img src="Gemstone Image 3.jpg" alt="This is an image of benitoite that can be found in California."> </div>
     <div class="image-box" data-match="3"><img src="Metal Image 1.jpg" alt="This is an image of raw gold melted and shaped."> </div>
     <div class="image-box" data-match="4"><img src="Metal Image 4.jpg" alt="This is an image of processed titanium."> </div>
   </div>
+  </div>
+
+  <div class="Info">
+  <div class="left-column"> <h2> Here are the info </h2>
+    <div class="info-box" data-match="2"> <p>Can be mistaken for sapphire, but it is more valuable.</p> </div>
+    <div class="info-box" data-match="1"> <p>More of a metal than a crystal since it's a brittle, crystalline, white metal with a slight pink tinge.</p> </div>
+    <div class="info-box" data-match="4"> <p>The go-to metal for artificial hip joints, dental implants, and bone pins.</p> </div>
+    <div class="info-box" data-match="3"> <p>There is an average of 0.2 milligrams in the human body.</p> </div>
+    </div>
+  </div>
+
+  <div class="answers" id="answers"></div>
+
+<div id="message"></div>
+
+<p id="progress"> Matches completed: 0 / 4 </p>
+
+<button onclick="restartGame()">Restart Game</button>
 
 </div>
+
 </main>
 
 <footer> 
@@ -68,4 +76,3 @@
 
 </body>
 </html>
-

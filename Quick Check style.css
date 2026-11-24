@@ -73,6 +73,11 @@ h3 {
      text-align: center;
 }
 
+p {
+  color: rgb(213, 251, 255);
+  font-size: 15px;
+}
+
 .matching-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -130,7 +135,455 @@ footer {
      justify-content: center;
 }
 
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.images, .answers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.image-card, .answer {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px #0002;
+}
+
+.image-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-card p {
+    font-weight: bold;
+}
+
+.answer {
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.2s;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer:hover {
+    border-color: #4285f4;
+    transform: translateY(-2px);
+}
+
+.answer.selected {
+    border-color: #4285f4;
+    background: #e8f0fe;
+}
+
+.answer.correct {
+    background: #d4edda;
+    border-color: #28a745;
+    cursor: default;
+}
+
+.answer.wrong {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
+
+.image-card.matched {
+    border: 4px solid #28a745;
+}
+
+button {
+    background: #2459a6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover { background: #173e79; }
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 28px;
+}
+
+@media(max-width: 650px) {
+    .images, .answers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /*
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Matching Quiz</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 { color: #243b5a; }
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.images, .answers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.image-card, .answer {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px #0002;
+}
+
+.image-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-card p {
+    font-weight: bold;
+}
+
+.answer {
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: 0.2s;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer:hover {
+    border-color: #4285f4;
+    transform: translateY(-2px);
+}
+
+.answer.selected {
+    border-color: #4285f4;
+    background: #e8f0fe;
+}
+
+.answer.correct {
+    background: #d4edda;
+    border-color: #28a745;
+    cursor: default;
+}
+
+.answer.wrong {
+    background: #f8d7da;
+    border-color: #dc3545;
+}
+
+.image-card.matched {
+    border: 4px solid #28a745;
+}
+
+button {
+    background: #2459a6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover { background: #173e79; }
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 28px;
+}
+
+@media(max-width: 650px) {
+    .images, .answers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Image Matching Challenge</h1>
+<p>Match each image to its correct information box.</p>
+<p>You have 4 correct matches to find among 20 answer choices!</p>
+
+<div id="score">Score: 0 / 4</div>
+
+<h2>1. Images</h2>
+<div class="images" id="images"></div>
+
+<h2>2. Information Boxes</h2>
+<p>Select an image, then select the information box you think matches it.</p>
+
+<div class="answers" id="answers"></div>
+
+<div id="message"></div>
+
+<p id="progress">Matches completed: 0 / 4</p>
+
+<button onclick="restartGame()">Restart Game</button>
+
+</div>
+
+<script>
+
+// EDIT YOUR IMAGES AND CORRECT INFORMATION HERE
+
+const imageData = [
+    {
+        id: 1,
+        name: "Image 1",
+        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500",
+        answer: "A beautiful natural landscape"
+    },
+    {
+        id: 2,
+        name: "Image 2",
+        image: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500",
+        answer: "A dog"
+    },
+    {
+        id: 3,
+        name: "Image 3",
+        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500",
+        answer: "A delicious meal"
+    },
+    {
+        id: 4,
+        name: "Image 4",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500",
+        answer: "People working together"
+    }
+];
+
+// 4 CORRECT ANSWERS + 16 INCORRECT ANSWERS
+
+const correctAnswers = imageData.map(item => ({
+    text: item.answer,
+    correctId: item.id
+}));
+
+const incorrectAnswers = [
+    "A busy city street",
+    "A type of wild animal",
+    "A computer game",
+    "A mountain covered in snow",
+    "A historical building",
+    "A colourful painting",
+    "A group of musicians",
+    "A modern vehicle",
+    "A tropical beach",
+    "A science experiment",
+    "A collection of books",
+    "A space exploration mission",
+    "A traditional festival",
+    "A sporting event",
+    "A flowering plant",
+    "A famous monument"
+];
+
+let selectedImage = null;
+let score = 0;
+let matched = [];
+let choices = [];
+
+function shuffle(array) {
+    return array.sort(() => Math.random() - 0.5);
+}
+
+function startGame() {
+    selectedImage = null;
+    score = 0;
+    matched = [];
+
+    choices = shuffle([
+        ...correctAnswers,
+        ...incorrectAnswers.map(text => ({
+            text,
+            correctId: null
+        }))
+    ]);
+
+    renderImages();
+    renderAnswers();
+    updateScore();
+
+    document.getElementById("message").textContent =
+        "Select an image to begin!";
+}
+
+function renderImages() {
+    const container = document.getElementById("images");
+    container.innerHTML = "";
+
+    imageData.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "image-card";
+
+        if (matched.includes(item.id)) {
+            card.classList.add("matched");
+        }
+
+        card.innerHTML = `
+            <img src="${item.image}" alt="${item.name}">
+            <p>${item.name}</p>
+        `;
+
+        if (!matched.includes(item.id)) {
+            card.style.cursor = "pointer";
+            card.onclick = () => selectImage(item.id);
+        }
+
+        container.appendChild(card);
+    });
+}
+
+function renderAnswers() {
+    const container = document.getElementById("answers");
+    container.innerHTML = "";
+
+    choices.forEach((choice, index) => {
+        const box = document.createElement("div");
+        box.className = "answer";
+        box.textContent = choice.text;
+
+        if (choice.used) {
+            box.classList.add("correct");
+        } else {
+            box.onclick = () => checkAnswer(index);
+        }
+
+        container.appendChild(box);
+    });
+}
+
+function selectImage(id) {
+    if (matched.includes(id)) return;
+
+    selectedImage = id;
+
+    document.getElementById("message").textContent =
+        "Now select the matching information box.";
+
+    renderImages();
+
+    const cards = document.querySelectorAll(".image-card");
+    const index = imageData.findIndex(item => item.id === id);
+
+    cards[index].style.border = "4px solid #4285f4";
+}
+
+function checkAnswer(index) {
+    if (selectedImage === null) {
+        document.getElementById("message").textContent =
+            "Please select an image first!";
+        return;
+    }
+
+    const choice = choices[index];
+
+    if (choice.used) return;
+
+    if (choice.correctId === selectedImage) {
+        score++;
+        matched.push(selectedImage);
+        choice.used = true;
+
+        document.getElementById("message").style.color = "green";
+        document.getElementById("message").textContent =
+            "Correct! Well done!";
+
+        selectedImage = null;
+        renderImages();
+        renderAnswers();
+        updateScore();
+
+        if (score === 4) {
+            document.getElementById("message").textContent =
+                "Congratulations! You matched all 4 images!";
+        }
+
+    } else {
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").textContent =
+            "Incorrect! Try another information box.";
+
+        const boxes = document.querySelectorAll(".answer");
+        boxes[index].classList.add("wrong");
+
+        setTimeout(() => {
+            boxes[index]?.classList.remove("wrong");
+        }, 700);
+    }
+}
+
+function updateScore() {
+    document.getElementById("score").textContent =
+        "Score: " + score + " / 4";
+
+    document.getElementById("progress").textContent =
+        "Matches completed: " + score + " / 4";
+}
+
+function restartGame() {
+    document.getElementById("message").style.color = "black";
+    startGame();
+}
+
+startGame();
+
+</script>
+
+</body>
+</html>
 
 footer {
      font-size: 20;
