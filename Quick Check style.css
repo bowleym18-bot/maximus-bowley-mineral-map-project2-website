@@ -106,33 +106,76 @@ p {
   text-size-adjust: 40px;
 }
 
-.info-box {
+.info-box1 {
   padding: 15px;
   border: 2px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 200px;
 }
 
-.info-box {
+.info-box2 {
   padding: 15px;
   border: 2px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 200px;
 }
 
-.image-box {
+.info-box3 {
   padding: 15px;
   border: 2px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  width: 200px;
+}
+
+.info-box4 {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 200px;
+}
+
+.image-box1 {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 310px;
+}
+
+.image-box2 {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 310px;
+}
+
+.image-box3 {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 310px;
+}
+
+.image-box4 {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 310px;
 }
 
 img {
-     width: 420px;
-     border: 10px rgba(207, 205, 205, 0.843);
+     width: 220px;
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
      margin: 20px;
@@ -179,7 +222,7 @@ img {
 }
 
 .answer:hover {
-    border-color: #4285f4;
+    border-color: #0690a8;
     transform: translateY(-2px);
 }
 
@@ -204,7 +247,7 @@ img {
 }
 
 button {
-    background: #0650c0;
+    background: #6f3ca9;
     color: white;
     border: none;
     padding: 12px 25px;
