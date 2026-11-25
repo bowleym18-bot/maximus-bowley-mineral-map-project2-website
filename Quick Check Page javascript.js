@@ -2,25 +2,25 @@ const imageData = [
     {
         id: 1,
         name: "Gemstone Image 1.jpg",
-        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=500",
+        image: "file:///Users/maximusbowley/Documents/GitHub/maximus-bowley-mineral-map-project2-website/Gemstone%20Image%201.jpg",
         answer: "More of a metal than a crystal since it's a brittle, crystalline, white metal with a slight pink tinge."
     },
     {
         id: 2,
         name: "Gemstone Image 3.jpg",
-        image: "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500",
+        image: "file:///Users/maximusbowley/Documents/GitHub/maximus-bowley-mineral-map-project2-website/Gemstone%20Image%203.jpg",
         answer: "Can be mistaken for sapphire, but it is more valuable."
     },
     {
         id: 3,
         name: "Metal Image 1.jpg",
-        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500",
+        image: "file:///Users/maximusbowley/Documents/GitHub/maximus-bowley-mineral-map-project2-website/Metal%20Image%201.jpg",
         answer: "There is an average of 0.2 milligrams in the human body."
     },
     {
         id: 4,
         name: "Metal Image 4.jpg",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500",
+        image: "file:///Users/maximusbowley/Documents/GitHub/maximus-bowley-mineral-map-project2-website/Metal%20Image%204.jpg",
         answer: "The go-to metal for artificial hip joints, dental implants, and bone pins."
     }
 ];
@@ -34,21 +34,7 @@ const correctAnswers = imageData.map(item => ({
 
 const incorrectAnswers = [
     "A busy city street",
-    "A type of wild animal",
-    "A computer game",
-    "A mountain covered in snow",
-    "A historical building",
-    "A colourful painting",
-    "A group of musicians",
-    "A modern vehicle",
-    "A tropical beach",
-    "A science experiment",
-    "A collection of books",
-    "A space exploration mission",
-    "A traditional festival",
-    "A sporting event",
-    "A flowering plant",
-    "A famous monument"
+    
 ];
 
 let selectedImage = null;

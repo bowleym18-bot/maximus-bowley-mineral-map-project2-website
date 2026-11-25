@@ -182,6 +182,8 @@ footer {
      background-color: #01380e;
      text-align: center;
      justify-content: center;
+     list-style: none;
+     margin-top: 50px;
 }
 
 /*.top-nav a {

@@ -1,7 +1,6 @@
 body {
 background-color:rgb(51, 51, 105);
 color:black;
-margin: 40px;
 }
 
 header {
@@ -11,8 +10,6 @@ header {
 nav {
 display: flex;
 list-style: none;
-margin: 0; 
-padding: 0;
 gap: 30px;
 align-content: center;
 }
@@ -73,6 +70,11 @@ h3 {
      text-align: center;
 }
 
+.progress {
+    color: rgb(213, 251, 255);
+    font-size: 15px;
+}
+
 p {
   color: rgb(213, 251, 255);
   font-size: 15px;
@@ -84,6 +86,7 @@ p {
   gap: 20px;
   max-width: 800px;
   margin: 20px auto;
+  justify-content: center;
 }
 
 .left-column {
@@ -91,6 +94,7 @@ p {
   flex-direction: column;
   gap: 15px;
   margin-left: 20px;
+  width: 500px;
 }
 
 .right-column {
@@ -98,6 +102,16 @@ p {
   flex-direction: column;
   gap: 15px;
   margin-right: 20px;
+  width: 500px;
+  text-size-adjust: 40px;
+}
+
+.info-box {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .info-box {
@@ -122,17 +136,6 @@ img {
      border-radius: 10px;
      filter: drop-shadow(30px 30px 30px rgba(97, 97, 108, 0.5));
      margin: 20px;
-}
-
-.low-bar {
-  justify-content: center;
-}
-
-footer {
-     font-size: 20;
-     background-color: #170138;
-     text-align: center;
-     justify-content: center;
 }
 
 .container {
@@ -172,7 +175,7 @@ footer {
     min-height: 65px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
 }
 
 .answer:hover {
@@ -201,7 +204,7 @@ footer {
 }
 
 button {
-    background: #2459a6;
+    background: #0650c0;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -210,7 +213,7 @@ button {
     cursor: pointer;
 }
 
-button:hover { background: #173e79; }
+button:hover { background: #4975b4; }
 
 #score {
     font-size: 20px;
@@ -219,7 +222,7 @@ button:hover { background: #173e79; }
 }
 
 #message {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     min-height: 28px;
 }
@@ -230,7 +233,37 @@ button:hover { background: #173e79; }
     }
 }
 
+.low-bar {
+  justify-content: center;
+}
+
+footer {
+     font-size: 20;
+     background-color: #170138;
+     text-align: center;
+     justify-content: center;
+}
+
 /*
+
+  <div class="images" id="images">
+  <div class="Image">
+  <div class="right-column"> <h2> Here are the images </h2>
+    <div class="image-box" data-match="1"><img src="Gemstone Image 1.jpg" alt="This is a photo of a piece of Bismuth."> </div>
+    <div class="image-box" data-match="2"><img src="Gemstone Image 3.jpg" alt="This is an image of benitoite that can be found in California."> </div>
+    <div class="image-box" data-match="3"><img src="Metal Image 1.jpg" alt="This is an image of raw gold melted and shaped."> </div>
+    <div class="image-box" data-match="4"><img src="Metal Image 4.jpg" alt="This is an image of processed titanium."> </div>
+    </div>
+    </div>
+
+  <div class="Info">
+  <div class="left-column"> <h2> Here are the info </h2>
+    <div class="info-box" data-match="2"> <p>Can be mistaken for sapphire, but it is more valuable.</p> </div>
+    <div class="info-box" data-match="1"> <p>More of a metal than a crystal since it's a brittle, crystalline, white metal with a slight pink tinge.</p> </div>
+    <div class="info-box" data-match="4"> <p>The go-to metal for artificial hip joints, dental implants, and bone pins.</p> </div>
+    <div class="info-box" data-match="3"> <p>There is an average of 0.2 milligrams in the human body.</p> </div>
+    </div>
+    </div>
 
 <!DOCTYPE html>
 <html lang="en">
