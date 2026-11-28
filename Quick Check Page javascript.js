@@ -1,3 +1,26 @@
+function checkAnswer(answer) {
+  // Reset all boxes
+  document.querySelectorAll(".info-box1")
+    .forEach(box => {
+      box.classList.remove("correct", "incorrect");
+    });
+
+  document.getElementById(answer)
+    .classList.add("correct");
+}
+
+function checkAnswer(answer) {
+  // Reset all boxes
+  document.querySelectorAll(".info-box2")
+    .forEach(box => {
+      box.classList.remove("correct", "incorrect");
+    });
+
+  document.getElementById(answer)
+    .classList.add("correct");
+}
+
+/*
 const imageData = [
     {
         id: 1,
